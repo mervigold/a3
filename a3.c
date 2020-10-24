@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main(){
 	int i = 1;
-	int n = 50;
-	int sum = 1;
-	int avg = 1;
+	int n = 10;
+	float sum = 1;
+	float avg = 1;
 
-	while(n >= 0) {
-		if(sum%i == avg && avg*i == sum){
-	printf("i = %d, sum = %d, avg = %d\n", n, sum, avg);
+	while(i <= n) {
+
+		printf("i = %d, sum = %.0f, avg = %.2f\n", i, sum, avg);
+		i++;		
+	sum += i;
+	avg = sum/i;
 	}
-	n++;
-}
 	return EXIT_SUCCESS;
 }
