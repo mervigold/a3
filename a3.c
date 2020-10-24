@@ -4,8 +4,8 @@
 int main(){
 	int i = 1;
 	int n = 10;
-	float sum = 1;
-	float avg = 1;
+	float sum = 1; //laut angebe ein float 
+	float avg = 1; //laut angebe ein float 
 
 	while(i <= n) {
 		printf("i = %d, sum = %.0f, avg = %.2f\n", i, sum, avg); //.0f = float ohne Nachkommastelle  und .2f = float mit 2
